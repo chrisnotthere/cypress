@@ -34,7 +34,25 @@ describe('Locators', () => {
     // get all elements with a specific data test id
     cy.get('[data-cy="btn-id-1"]')
     cy.getByTestId('btn-id-1')
+  })
 
+  // contains only gets the first element
+  // get gets all elements
+
+  it('Locating elements with contains', () => {
+    // get element by text
+    cy.contains('Unique Text')
+
+    // get element by text
+    cy.contains('Not Unique Text')
+
+    // get element by text and tag name
+    cy.contains('[type="submit"]', 'Not Unique Text')
+
+    // get all elements by type and get one by text
+    cy.get('[type="submit"]').contains('Not Unique Text')
+
+    
 
   })
 

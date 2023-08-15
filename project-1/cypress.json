@@ -3,5 +3,7 @@
   "ignoreTestFiles": [
     "**/1-getting-started/*.js",
     "**/2-advanced-examples/*.js"
-  ]
+  ],
+  "viewportWidth": 1200,
+  "viewportHeight": 800
 }

@@ -51,9 +51,14 @@ describe('Locators', () => {
 
     // get all elements by type and get one by text
     cy.get('[type="submit"]').contains('Not Unique Text')
+  })
 
-    
+  // find must be chained to a get
+  // find locates the children of the element and returns the first one
 
+  it('Locating elements with find', () => {
+    // get element by id and find element by class name
+    cy.get('#form-1').find('.btn-2')
   })
 
 })
